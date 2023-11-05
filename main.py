@@ -29,3 +29,9 @@ while True:
 
     if ball.ycor() > 280 or ball.ycor() < -280:
         ball.bounce_y()
+
+    if ball.xcor()>380:
+        ball.reset_position()
+
+    if ball.xcor()<-380:
+        ball.reset_position()
